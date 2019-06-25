@@ -1,13 +1,13 @@
 import React from "react";
 import Ambassador from "./Ambassador";
 
-//array to add ambassadors, each element = file name from public/images folder (name-surrname)
+//array to add ambassadors, each element = file name from public/images/people folder (name-surrname.jpg)
 const people = [
-  "Łukasz-Kubot",
-  "Stéphane-Antiga",
-  "Maciej-Kot",
-  "Miks-Zvejnieks",
-  "Patrik-Šorm"
+  "Łukasz-Kubot.jpg",
+  "Stéphane-Antiga.jpg",
+  "Maciej-Kot.jpg",
+  "Miks-Zvejnieks.jpg",
+  "Patrik-Šorm.jpg"
 ];
 
 export default () => {

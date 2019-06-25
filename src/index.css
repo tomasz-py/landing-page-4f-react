@@ -265,8 +265,7 @@ h2 {
 }
 
 /* FOOTER */
-.fb,
-.insta {
+.footer-img {
   filter: invert(1);
 }
 
