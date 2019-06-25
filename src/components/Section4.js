@@ -1,4 +1,14 @@
 import React from "react";
+import Ambassador from "./Ambassador";
+
+//array to add ambassadors, each element = file name from public/images folder (name-surrname)
+const people = [
+  "Łukasz-Kubot",
+  "Stéphane-Antiga",
+  "Maciej-Kot",
+  "Miks-Zvejnieks",
+  "Patrik-Šorm"
+];
 
 export default () => {
   return (
@@ -14,26 +24,9 @@ export default () => {
           Latvian alpine skier Miks Zvejnieks.
         </p>
         <ul className="people">
-          <li className="person">
-            <img src="./images/people/kubot.jpg" alt="Kubot" />
-            <span className="person-name test">Łukasz Kubot</span>
-          </li>
-          <li className="person">
-            <img src="./images/people/antiga.jpg" alt="Antiga" />
-            <span className="person-name">Stéphane Antiga</span>
-          </li>
-          <li className="person">
-            <img src="./images/people/kot.jpg" alt="Kot" />
-            <span className="person-name">Maciej Kot</span>
-          </li>
-          <li className="person">
-            <img src="./images/people/Zvejnieks.jpg" alt="Zvejnieks" />
-            <span className="person-name">Miks Zvejnieks</span>
-          </li>
-          <li className="person">
-            <img src="./images/people/Sorm.jpg" alt="Sorm" />
-            <span className="person-name">Patrik Šorm</span>
-          </li>
+          {people.map((person, index) => {
+            return <Ambassador person={person} key={index} />;
+          })}
         </ul>
       </div>
     </section>

@@ -1,12 +1,6 @@
 import React from "react";
-import * as fs from "fs";
 
-import listReactFiles from "list-react-files";
-
-console.log(fs);
-// const test = listReactFiles(__dirname).then(files => console.log(files));
-
-const Header = params => {
+const Header = () => {
   return (
     <header className="header">
       <div className="content-wrapper">
