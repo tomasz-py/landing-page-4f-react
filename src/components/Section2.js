@@ -3,10 +3,10 @@ import React from "react";
 export default () => {
   return (
     <section id="section-2">
-      <div class="content-wrapper">
-        <div class="section-2-img">
+      <div className="content-wrapper">
+        <div className="section-2-img">
           <img src="./images/section2.jpg" alt="" />
-          <a href="#" class="gts">
+          <a href="#" className="gts">
             Go to store
           </a>
         </div>

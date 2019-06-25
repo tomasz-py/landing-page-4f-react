@@ -3,7 +3,7 @@ import React from "react";
 export default () => {
   return (
     <section id="section-4">
-      <div class="content-wrapper">
+      <div className="content-wrapper">
         <h2>Ambassadors</h2>
         <p>
           Furthermore, 4F constantly collaborates with individually selected
@@ -13,26 +13,26 @@ export default () => {
           Kubot, Czech sprinter specialising in the 400 metres Patrik Šorm and
           Latvian alpine skier Miks Zvejnieks.
         </p>
-        <ul class="people">
-          <li class="person">
+        <ul className="people">
+          <li className="person">
             <img src="./images/people/kubot.jpg" alt="Kubot" />
-            <span class="person-name test">Łukasz Kubot</span>
+            <span className="person-name test">Łukasz Kubot</span>
           </li>
-          <li class="person">
+          <li className="person">
             <img src="./images/people/antiga.jpg" alt="Antiga" />
-            <span class="person-name">Stéphane Antiga</span>
+            <span className="person-name">Stéphane Antiga</span>
           </li>
-          <li class="person">
+          <li className="person">
             <img src="./images/people/kot.jpg" alt="Kot" />
-            <span class="person-name">Maciej Kot</span>
+            <span className="person-name">Maciej Kot</span>
           </li>
-          <li class="person">
+          <li className="person">
             <img src="./images/people/Zvejnieks.jpg" alt="Zvejnieks" />
-            <span class="person-name">Miks Zvejnieks</span>
+            <span className="person-name">Miks Zvejnieks</span>
           </li>
-          <li class="person">
+          <li className="person">
             <img src="./images/people/Sorm.jpg" alt="Sorm" />
-            <span class="person-name">Patrik Šorm</span>
+            <span className="person-name">Patrik Šorm</span>
           </li>
         </ul>
       </div>

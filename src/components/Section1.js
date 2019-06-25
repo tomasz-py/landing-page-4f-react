@@ -3,14 +3,14 @@ import React from "react";
 export default () => {
   return (
     <section id="section-1">
-      <div class="content-wrapper">
-        <div class="section-1-who">
+      <div className="content-wrapper">
+        <div className="section-1-who">
           <img src="./images/section1a.jpg" alt="" />
         </div>
-        <div class="section-1-img">
+        <div className="section-1-img">
           <img src="./images/section1b.jpg" alt="" />
         </div>
-        <div class="section-1-brand">
+        <div className="section-1-brand">
           <h2>4F brand</h2>
 
           <p>
@@ -19,7 +19,7 @@ export default () => {
             technologies and trendy design.
           </p>
 
-          <p class="fourF">
+          <p className="fourF">
             Our four F’s stand for <strong>Freedom</strong>,{" "}
             <strong>Fashion</strong>, <strong>Future</strong> and{" "}
             <strong>Fit</strong>.
