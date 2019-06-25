@@ -1,13 +1,414 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: "Lab Grotesque";
+  src: url("./fonts/LabGrotesque-BoldItalic.eot");
+  src: local("Lab Grotesque Bold Italic"), local("LabGrotesque-BoldItalic"),
+    url("./fonts/LabGrotesque-BoldItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("./fonts/LabGrotesque-BoldItalic.woff") format("woff"),
+    url("./fonts/LabGrotesque-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+@font-face {
+  font-family: "Lab Grotesque";
+  src: url("./fonts/LabGrotesque-Light.eot");
+  src: local("Lab Grotesque Light"), local("LabGrotesque-Light"),
+    url("./fonts/LabGrotesque-Light.eot?#iefix") format("embedded-opentype"),
+    url("./fonts/LabGrotesque-Light.woff") format("woff"),
+    url("./fonts/LabGrotesque-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lab Grotesque";
+  src: url("./fonts/LabGrotesque-MediumItalic.eot");
+  src: local("Lab Grotesque Medium Italic"), local("LabGrotesque-MediumItalic"),
+    url("./fonts/LabGrotesque-MediumItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("./fonts/LabGrotesque-MediumItalic.woff") format("woff"),
+    url("./fonts/LabGrotesque-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Lab Grotesque";
+  src: url("./fonts/LabGrotesque-Regular.eot");
+  src: local("Lab Grotesque Regular"), local("LabGrotesque-Regular"),
+    url("./fonts/LabGrotesque-Regular.eot?#iefix") format("embedded-opentype"),
+    url("./fonts/LabGrotesque-Regular.woff") format("woff"),
+    url("./fonts/LabGrotesque-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lab Grotesque";
+  src: url("./fonts/LabGrotesque-LightItalic.eot");
+  src: local("Lab Grotesque Light Italic"), local("LabGrotesque-LightItalic"),
+    url("./fonts/LabGrotesque-LightItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("./fonts/LabGrotesque-LightItalic.woff") format("woff"),
+    url("./fonts/LabGrotesque-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Lab Grotesque";
+  src: url("./fonts/LabGrotesque-Italic.eot");
+  src: local("Lab Grotesque Italic"), local("LabGrotesque-Italic"),
+    url("./fonts/LabGrotesque-Italic.eot?#iefix") format("embedded-opentype"),
+    url("./fonts/LabGrotesque-Italic.woff") format("woff"),
+    url("./fonts/LabGrotesque-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Lab Grotesque";
+  src: url("./fonts/LabGrotesque-Black.eot");
+  src: local("Lab Grotesque Black"), local("LabGrotesque-Black"),
+    url("./fonts/LabGrotesque-Black.eot?#iefix") format("embedded-opentype"),
+    url("./fonts/LabGrotesque-Black.woff") format("woff"),
+    url("./fonts/LabGrotesque-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lab Grotesque";
+  src: url("./fonts/LabGrotesque-Medium.eot");
+  src: local("Lab Grotesque Medium"), local("LabGrotesque-Medium"),
+    url("./fonts/LabGrotesque-Medium.eot?#iefix") format("embedded-opentype"),
+    url("./fonts/LabGrotesque-Medium.woff") format("woff"),
+    url("./fonts/LabGrotesque-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lab Grotesque";
+  src: url("./fonts/LabGrotesque-BlackItalic.eot");
+  src: local("Lab Grotesque Black Italic"), local("LabGrotesque-BlackItalic"),
+    url("./fonts/LabGrotesque-BlackItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("./fonts/LabGrotesque-BlackItalic.woff") format("woff"),
+    url("./fonts/LabGrotesque-BlackItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Lab Grotesque";
+  src: url("./fonts/LabGrotesque-Bold.eot");
+  src: local("Lab Grotesque Bold"), local("LabGrotesque-Bold"),
+    url("./fonts/LabGrotesque-Bold.eot?#iefix") format("embedded-opentype"),
+    url("./fonts/LabGrotesque-Bold.woff") format("woff"),
+    url("./fonts/LabGrotesque-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+/*STYLE RESET*/
+
+html,
+body,
+div,
+img,
+ol,
+ul,
+li,
+footer,
+header,
+nav,
+p,
+section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+/* STYLE */
+body {
+  background: #ffffff;
+  font-family: "Lab Grotesque", sans-serif;
+}
+
+.app-wrapper {
+  padding: 1em;
+}
+
+.header {
+  text-align: center;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.logo > * {
+  width: 156px;
+}
+
+h2 {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* SECTION 1 */
+
+.section-1-who img {
+  width: 47%;
+  float: left;
+  /* height: 288px; */
+}
+
+.section-1-img img {
+  /* height: 288px; */
+  width: 47%;
+  float: right;
+}
+
+.section-1-brand {
+  display: inline-block;
+}
+
+.fourF {
+  margin-top: 1em;
+}
+/* SECTION 2 */
+
+#section-2 {
+  margin-top: 2em;
+}
+
+#section-2 img {
+  width: 100%;
+}
+
+.section-2-img {
+  position: relative;
+}
+
+.gts {
+  display: block;
+  position: absolute;
+  width: 25%;
+  padding: 1.1em 1.1em;
+  bottom: 15%;
+  transform: translateX(-50%);
+  left: 50%;
+  background-color: #fff;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  /* transition: 0.6s; */
+  transition-property: background-color;
+  transition-duration: 0.6s;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+.gts:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+/* SECTION 3 */
+
+#section-3 {
+  margin-top: 2em;
+}
+
+#section-3 img {
+  width: 100%;
+}
+
+/* SECTION 4 */
+
+.people {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 2em;
+}
+
+.person {
+  position: relative;
+  width: 48%;
+  max-width: 203px;
+}
+
+.person img {
+  width: 100%;
+  object-fit: cover;
+  width: 203px;
+  height: 299px;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.person-name {
+  position: absolute;
+  opacity: 0.7;
+  bottom: 20%;
+  left: 10%;
+  background: #fff;
+}
+
+/* FOOTER */
+.fb,
+.insta {
+  filter: invert(1);
+}
+
+.footer-ul {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-ul li {
+  padding: 1em;
+}
+.footer-ul a {
+  text-decoration: none;
+  font-size: 0.8em;
+  cursor: pointer;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 768px) {
+  .app-wrapper {
+    display: grid;
+    grid-template-columns: 1fr minmax(768px, 1350px) 1fr;
+  }
+
+  h2 {
+    text-align: left;
+  }
+
+  .content-wrapper {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  .header {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  .logo {
+    grid-column: 6/8;
+  }
+
+  /* SECTION 1 */
+  #section-1 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+
+  .section-1-who {
+    grid-column: 2/8;
+    grid-row: 1/4;
+  }
+  .section-1-who img {
+    float: none;
+    width: 100%;
+  }
+
+  .section-1-img {
+    grid-column: 8/12;
+    grid-row: 1/3;
+    margin-left: 2em;
+  }
+  .section-1-img img {
+    width: 100%;
+  }
+
+  .section-1-brand {
+    float: none;
+
+    grid-column: 8/12;
+    grid-row: 3/4;
+    margin-left: 2em;
+  }
+
+  /* SECTION 2 */
+  #section-2 {
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+  #section-2 .content-wrapper > * {
+    grid-column: 1/13;
+  }
+
+  /* SECTION 3 */
+  #section-3 {
+    grid-column: 2/3;
+    grid-row: 4/5;
+    margin-top: 4em;
+  }
+
+  #section-3 .content-wrapper > * {
+    grid-column: 3/11;
+  }
+
+  /* SECTION 4 */
+  #section-4 {
+    grid-column: 2/3;
+    grid-row: 5/6;
+  }
+
+  #section-4 .content-wrapper {
+    grid-column: 3/11;
+  }
+
+  #section-4 h2 {
+    text-align: left;
+  }
+
+  #section-4 .content-wrapper > * {
+    grid-column: 1/13;
+  }
+
+  #section-4 .content-wrapper h2,
+  #section-4 .content-wrapper p {
+    grid-column: 3/11;
+  }
+
+  .people {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    grid-column: 1/13;
+  }
+
+  .person {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .person-name {
+    position: static;
+    opacity: 1;
+    margin-top: 0.5em;
+    font-weight: bold;
+  }
+
+  .footer {
+    grid-column: 2/3;
+    grid-row: 6/7;
+    margin-top: 3em;
+  }
+
+  .footer .content-wrapper > * {
+    grid-column: 3/11;
+  }
 }
