@@ -249,7 +249,7 @@ h2 {
 .person img {
   width: 100%;
   object-fit: cover;
-  width: 203px;
+  width: minmax(150px, 203px);
   height: 299px;
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
