@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/landing-page-4f-react/static/css/main.f4200376.chunk.css",
+    "main.css": "/landing-page-4f-react/static/css/main.102b4d53.chunk.css",
     "main.js": "/landing-page-4f-react/static/js/main.c51b76a6.chunk.js",
     "main.js.map": "/landing-page-4f-react/static/js/main.c51b76a6.chunk.js.map",
     "runtime~main.js": "/landing-page-4f-react/static/js/runtime~main.8fbcfcaa.js",
@@ -8,9 +8,9 @@
     "static/js/2.3310f33a.chunk.js": "/landing-page-4f-react/static/js/2.3310f33a.chunk.js",
     "static/js/2.3310f33a.chunk.js.map": "/landing-page-4f-react/static/js/2.3310f33a.chunk.js.map",
     "index.html": "/landing-page-4f-react/index.html",
-    "precache-manifest.69d7ab484d7d2155c0b94db2285b36e4.js": "/landing-page-4f-react/precache-manifest.69d7ab484d7d2155c0b94db2285b36e4.js",
+    "precache-manifest.c3f367d87d7fd8a0331c8bbc10bd93e1.js": "/landing-page-4f-react/precache-manifest.c3f367d87d7fd8a0331c8bbc10bd93e1.js",
     "service-worker.js": "/landing-page-4f-react/service-worker.js",
-    "static/css/main.f4200376.chunk.css.map": "/landing-page-4f-react/static/css/main.f4200376.chunk.css.map",
+    "static/css/main.102b4d53.chunk.css.map": "/landing-page-4f-react/static/css/main.102b4d53.chunk.css.map",
     "static/media/index.css": "/landing-page-4f-react/static/media/LabGrotesque-Regular.cd4376c3.ttf"
   }
 }
